@@ -15,7 +15,7 @@ public class SMSService {
     private static final Logger logger = Logger.getLogger(SMSService.class);
 
     void sendSMS(String mobileNumber, String otp) {
-        String message = "Dear User, your OTP is " + otp + ". Msg from Digivriddhi";
+        String message = "Dear User, your OTP is " + otp + ". Msg from your senderId";
         System.err.println(message);
         try {
             Date mydate = new Date(System.currentTimeMillis());
@@ -24,9 +24,9 @@ public class SMSService {
             data += "&send_to=91" + URLEncoder.encode(mobileNumber, "UTF-8"); // a valid 10 digit phone no.
             data += "&msg=" + URLEncoder.encode(message, String.valueOf(StandardCharsets.UTF_8)); //put message here
             data += "&msg_type=TEXT"; // Can by "FLASH" or
-            data += "&userid=2000192340"; // your loginId
+            data += "&userid=your loginId"; // your loginId
             data += "&auth_scheme=plain";
-            data += "&password=57TGynyz"; // your password
+            data += "&password=your password"; // your password
             data += "&v=1.1";
             data += "&format=text";
             URL url = new URL("http://enterprise.smsgupshup.com/GatewayAPI/rest?" + data);
