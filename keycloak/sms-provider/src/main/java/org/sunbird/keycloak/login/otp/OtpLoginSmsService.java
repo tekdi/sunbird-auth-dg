@@ -1,4 +1,4 @@
-package org.sunbird.keycloak.otplogin;
+package org.sunbird.keycloak.login.otp;
 
 import org.jboss.logging.Logger;
 
@@ -10,9 +10,9 @@ import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
 
-public class SMSService {
+public class OtpLoginSmsService {
 
-    private static final Logger logger = Logger.getLogger(SMSService.class);
+    private static final Logger logger = Logger.getLogger(OtpLoginSmsService.class);
 
     void sendSMS(String mobileNumber, String otp) {
         String message = "Dear User, your OTP is " + otp + ". Msg from your senderId";
