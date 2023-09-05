@@ -1,4 +1,4 @@
-package org.sunbird.keycloak.otplogin;
+package org.sunbird.keycloak.login.otp;
 
 import org.keycloak.Config;
 import org.keycloak.authentication.Authenticator;
@@ -7,6 +7,7 @@ import org.keycloak.models.AuthenticationExecutionModel;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
+import org.sunbird.keycloak.utils.Constants;
 
 import java.util.List;
 

@@ -49,4 +49,14 @@ public class Constants {
   public static final String SUNBIRD_CASSANDRA_IP = "sunbird_cassandra_host";
   public static final String SUNBIRD_CASSANDRA_PORT = "sunbird_cassandra_port";
   public static final String LAST_NAME = "lastname";
+
+  //Constants for otp based authentication
+  public static final String FORM_TYPE = "form_type";
+  public static final String LOGIN_FORM = "login";
+  public static final String VERIFY_OTP_FORM = "verify_otp";
+  public static final String MOBILE_NUMBER = "phone";
+  public static final String OTP_LOGIN_UI = "otp-login.ftl";
+  public static final String OTP_VERIFY_UI = "otp-verify.ftl";
+  public static final String PROVIDER_DISPLAY_TEXT = "OTP Based Authentication";
+  public static final String PROVIDER_ID = "otp-based-authentication";
 }
