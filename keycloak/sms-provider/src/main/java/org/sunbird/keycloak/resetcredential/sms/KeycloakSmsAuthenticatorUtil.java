@@ -88,7 +88,7 @@ public class KeycloakSmsAuthenticatorUtil {
         return mobileNumber;
     }
 
-    static boolean sendSmsCode(String mobileNumber, String code, AuthenticatorConfigModel config) {
+    public static boolean sendSmsCode(String mobileNumber, String code, AuthenticatorConfigModel config) {
         String smsText = createMessage(code, mobileNumber, config);
         logger.debug("KeycloakSmsAuthenticatorUtil@sendSmsCode : smsText - " + smsText);
 
